@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0095905167073E3FFCC8AA37 /* Pods_Firebase_Social_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D4318D4C3538F80CB2ED5C /* Pods_Firebase_Social_Login.framework */; };
+		2A3A12511F3312EA0042CADD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A3A12501F3312EA0042CADD /* GoogleService-Info.plist */; };
 		2ACA8F771F3263A3003ACB2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA8F761F3263A3003ACB2E /* AppDelegate.swift */; };
 		2ACA8F791F3263A4003ACB2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACA8F781F3263A4003ACB2E /* ViewController.swift */; };
 		2ACA8F7C1F3263A4003ACB2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACA8F7A1F3263A4003ACB2E /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		29D4318D4C3538F80CB2ED5C /* Pods_Firebase_Social_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Social_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3A12501F3312EA0042CADD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2ACA8F731F3263A3003ACB2E /* Firebase Social Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase Social Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACA8F761F3263A3003ACB2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ACA8F781F3263A4003ACB2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				2ACA8F7A1F3263A4003ACB2E /* Main.storyboard */,
 				2ACA8F7D1F3263A4003ACB2E /* Assets.xcassets */,
 				2ACA8F7F1F3263A4003ACB2E /* LaunchScreen.storyboard */,
+				2A3A12501F3312EA0042CADD /* GoogleService-Info.plist */,
 				2ACA8F821F3263A4003ACB2E /* Info.plist */,
 			);
 			path = "Firebase Social Login";
@@ -161,6 +164,7 @@
 				2ACA8F811F3263A4003ACB2E /* LaunchScreen.storyboard in Resources */,
 				2ACA8F7E1F3263A4003ACB2E /* Assets.xcassets in Resources */,
 				2ACA8F7C1F3263A4003ACB2E /* Main.storyboard in Resources */,
+				2A3A12511F3312EA0042CADD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
