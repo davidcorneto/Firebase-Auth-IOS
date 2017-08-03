@@ -9,5 +9,6 @@ target 'Firebase Social Login' do
 pod 'FBSDKCoreKit'
 pod 'FBSDKShareKit'
 pod 'FBSDKLoginKit'
+pod 'Firebase/Auth'
 
 end
