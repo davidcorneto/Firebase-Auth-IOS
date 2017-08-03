@@ -8,6 +8,7 @@
 
 import UIKit
 import FBSDKLoginKit
+import Firebase
 
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
 
@@ -51,6 +52,26 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func showEmailAddress(){
+        //Firebase credensial, login into firebase auth
+        
+        let accessToken = FBSDKAccessToken.current()
+        guard let accessTokenString = accessToken?.tokenString else {
+            return
+        }
+        
+        let credential = FIRFacebookAuthProvider.credential(withAccessToken: accessTokenString)
+        
+        FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
+            if error != nil {
+                self.createAlert(title: "Warning", message: "Something went wrong with our FB user!")
+                print(error ?? "")
+                return
+            }
+            
+            self.createAlert(title: "Success Login!", message: "Selamat Anda telah berhasil login!")
+        })
+        
+        
         FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "id, email, name"]).start { (connection, result, err) in
             
             
@@ -60,7 +81,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
                 return
             }
             
-            print(result!)
+            print(result ?? "")
         }
     }
 
@@ -95,6 +116,9 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         self.present(alert, animated: true, completion: nil)
         
     }
+    
+
+
 
 
 }
